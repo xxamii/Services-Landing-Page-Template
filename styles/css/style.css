@@ -106,6 +106,57 @@
   color: #061e37;
 }
 
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 0;
+}
+
+.hero .hero__offer .hero__h {
+  font-family: 'Raleway Extra Bold' , sans-serif;
+  color: white;
+  font-size: 55;
+}
+
+.hero .hero__offer .hero__p {
+  font-family: 'Raleway Regular' , sans-serif;
+  color: white;
+  font-size: 18;
+}
+
+.hero .hero__offer .hero__button {
+  padding: 20px 40px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.hero .hero__offer .hero__button:hover {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  -webkit-transform: translateY(11px);
+          transform: translateY(11px);
+}
+
+.hero .hero__offer .btn1 {
+  background-color: #061e37;
+  color: white;
+}
+
+.hero .hero__offer .btn2 {
+  color: #061e37;
+  background-color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
