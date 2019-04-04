@@ -2,8 +2,8 @@
     display: flex;
     padding: 50px 0;
     color: white;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
 
     
     .navbar__logo {
@@ -14,7 +14,7 @@
         p , strong {
             padding: 0;
             margin: 0;
-            font-size: 15;
+            font-size: 15pt;
         }
 
         p {
@@ -40,7 +40,7 @@
             color: white;
             text-decoration: none;
             transition: 0.15s;
-            font-size: 15;
+            font-size: 15pt;
             margin-right: 50px;
 
             &:last-child {
@@ -63,7 +63,7 @@
         width: 100px;
         height: 40px;
         padding: 5px 18px;
-        font-size: 12;
+        font-size: 12pt;
         cursor: pointer;
         transition: 0.15s;
 
