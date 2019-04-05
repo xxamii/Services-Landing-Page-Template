@@ -89,7 +89,7 @@
   font-family: 'Raleway Regular' , sans-serif;
   background-color: transparent;
   border: 1px solid white;
-  border-radius: 5%;
+  border-radius: 8px;
   color: white;
   width: 100px;
   height: 40px;
@@ -133,11 +133,13 @@
   font-family: 'Raleway Extra Bold' , sans-serif;
   padding: 20px 40px;
   border: 1px solid transparent;
+  border-radius: 8px;
   cursor: pointer;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
   -webkit-transition: 0.15s;
   transition: 0.15s;
+  outline: none;
 }
 
 .hero .hero__offer .hero__button:hover {
@@ -150,11 +152,138 @@
 .hero .hero__offer .btn1 {
   background-color: #061e37;
   color: white;
+  margin-right: 30px;
 }
 
 .hero .hero__offer .btn2 {
   color: #061e37;
   background-color: white;
+}
+
+.main__easy {
+  padding: 100px 0 100px 0;
+  text-align: center;
+}
+
+.main__easy .easy__title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.main__easy .easy__title h1 {
+  font-family: 'Raleway Semibold' , sans-serif;
+  font-size: 42pt;
+  color: #061e37;
+  margin-bottom: 15px;
+}
+
+.main__easy .easy__title h3 {
+  font-family: 'Raleway Semibold' , sans-serif;
+  font-size: 22pt;
+  color: #b0bec5;
+  margin-bottom: 20px;
+}
+
+.main__easy .easy__title p {
+  font-family: 'Raleway Regular' , sans-serif;
+  font-size: 13pt;
+  color: #b0bec5;
+}
+
+.main__easy .easy__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.main__easy .easy__cards .easy__card {
+  text-align: center;
+}
+
+.main__easy .easy__cards .easy__card h3 {
+  font-family: 'Raleway Semibold' , sans-serif;
+  font-size: 20pt;
+  color: #061e37;
+}
+
+.main__easy .easy__cards .easy__card p {
+  font-family: 'Raleway Regular' , sans-serif;
+  font-size: 13pt;
+  color: #78909c;
+  margin: 10px;
+}
+
+.main__easy .easy__button {
+  font-family: 'Raleway Semibold' , sans-serif;
+  background-color: #1de9b6;
+  padding: 20px 30px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: white;
+  font-size: 15pt;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.main__easy .easy__button:hover {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.main__statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main__statistics .statistics__count {
+  width: 25%;
+  padding: 45px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__statistics .statistics__count div p {
+  font-family: 'Raleway Extra Bold' , sans-serif;
+  font-size: 12pt;
+  margin: 0;
+  color: white;
+}
+
+.main__statistics .statistics__count img {
+  margin-right: 20px;
+}
+
+.main__statistics .buisness {
+  background-color: #80d8ff;
+}
+
+.main__statistics .downloads {
+  background-color: #82b1ff;
+}
+
+.main__statistics .installs {
+  background-color: #b388ff;
+}
+
+.main__statistics .users {
+  background-color: #ea80fc;
 }
 
 body {

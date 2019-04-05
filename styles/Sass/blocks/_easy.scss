@@ -1,5 +1,72 @@
 .main__easy {
     padding: 100px 0 100px 0;
+    text-align: center;
 
-    
+    .easy__title {
+        text-align: center;
+        margin-bottom: 90px;
+
+        h1 {
+            @include bold();
+            font-size: 42pt;
+            color: #061e37;
+            margin-bottom: 15px;    
+        }
+        h3 {
+            @include bold();
+            font-size: 22pt;
+            color: #b0bec5;
+            margin-bottom: 20px;
+        }
+        p {
+            @include reg();
+            font-size: 13pt;
+            color: #b0bec5;
+        }
+    }
+
+    .easy__cards {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 80px;
+
+        .easy__card {
+            text-align: center;
+
+            h3 {
+                @include bold();
+                font-size: 20pt;
+                color: #061e37;
+            }
+            p {
+                @include reg();
+                font-size: 13pt;
+                color: #78909c;
+                margin: 10px;
+            } 
+        }
+    }
+
+    .easy__button {
+        @include bold();
+        background-color: #1de9b6;
+        padding: 20px 30px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        color: white;
+        font-size: 15pt;
+        transition: 0.15s;
+        cursor: pointer;
+        
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+
+        &:hover {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+            transform: translateY(3px);
+        }
+    }
 }

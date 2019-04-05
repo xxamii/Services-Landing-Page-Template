@@ -1,0 +1,39 @@
+.main__statistics {
+    display: flex;
+    width: 100%;
+
+    .statistics__count {
+        width: 25%;
+        padding: 45px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div {
+
+            p {
+                @include extrabold();
+                font-size: 12pt;
+                margin: 0;
+                color: white;
+            }
+        }
+
+        img {
+            margin-right: 20px;
+        }
+    }
+
+    .buisness {
+        background-color: #80d8ff;    
+    }
+    .downloads {
+        background-color: #82b1ff;
+    }
+    .installs {
+        background-color: #b388ff;
+    }
+    .users {
+        background-color: #ea80fc;
+    }
+}
