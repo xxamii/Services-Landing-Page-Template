@@ -161,7 +161,7 @@
 }
 
 .main__easy {
-  padding: 100px 0 100px 0;
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -284,6 +284,74 @@
 
 .main__statistics .users {
   background-color: #ea80fc;
+}
+
+.main__services {
+  padding: 100px 0;
+}
+
+.main__services .services__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main__services .services__title h1 {
+  font-family: 'Raleway Semibold' , sans-serif;
+  font-size: 42pt;
+  color: #061e37;
+  margin-bottom: 15px;
+}
+
+.main__services .services__title p {
+  font-family: 'Raleway Regular' , sans-serif;
+  font-size: 13pt;
+  color: #b0bec5;
+}
+
+.main__services .services__service {
+  width: 50%;
+  border-radius: 8px;
+  padding: 20px 30px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 20px auto;
+  cursor: pointer;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  position: relative;
+}
+
+.main__services .services__service i {
+  color: #061e37;
+  height: 15px;
+  width: auto;
+  margin-right: 30px;
+}
+
+.main__services .services__service h3 {
+  font-family: 'Raleway Semibold' , sans-serif;
+  color: #061e37;
+  font-size: 15pt;
+}
+
+.main__services .services__service .fa-sort-down {
+  position: absolute;
+  margin-right: 0;
+  right: 30px;
+}
+
+.main__services .services__service:hover {
+  background-color: #061e37;
+}
+
+.main__services .services__service:hover i, .main__services .services__service:hover h3 {
+  color: white;
 }
 
 body {

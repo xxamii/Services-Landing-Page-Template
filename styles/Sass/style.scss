@@ -1,6 +1,9 @@
 //Grid
 @import 'grid';
 
+//colors
+@import './colors';
+
 //fonts
 @import 'fonts';
 
@@ -15,6 +18,9 @@
 
 //stats
 @import './blocks/statistic';
+
+//services
+@import './blocks/services';
 
 body {
     margin: 0;

@@ -1,0 +1,61 @@
+.main__services {
+    padding: 100px 0;
+
+    .services__title {
+        text-align: center;
+        margin-bottom: 50px;
+
+        h1 {
+            @include bold();
+            font-size: 42pt;
+            color: $blue;
+            margin-bottom: 15px;    
+        }
+        p {
+            @include reg();
+            font-size: 13pt;
+            color: $gray;
+        }
+    }
+
+    .services__service {
+        width: 50%;
+        border-radius: 8px;
+        padding: 20px 30px;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+        align-items: center;
+        display: flex;
+        margin: 0 auto 20px auto;
+        cursor: pointer;
+        transition: 0.15s;
+        position: relative;
+
+        i {
+            color: $blue;
+            height: 15px;
+            width: auto;
+            margin-right: 30px;
+        }
+        h3 {
+            @include bold();
+            color: $blue;
+            font-size: 15pt;
+        }
+        .fa-sort-down {
+            position: absolute;
+            margin-right: 0;
+            right: 30px;
+        }
+
+        &:hover {
+            background-color: $blue;
+
+            i , h3 {
+                color: white;
+            }
+        }
+    }
+}
+
+  
+
