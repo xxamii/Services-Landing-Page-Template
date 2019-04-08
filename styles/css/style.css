@@ -309,17 +309,11 @@
 }
 
 .main__services .services__service {
-  width: 50%;
+  width: 65%;
   border-radius: 8px;
   padding: 20px 30px;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 auto 20px auto;
   cursor: pointer;
   -webkit-transition: 0.15s;
@@ -327,31 +321,54 @@
   position: relative;
 }
 
-.main__services .services__service i {
+.main__services .services__service .service__header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__services .services__service .service__header i {
   color: #061e37;
   height: 15px;
   width: auto;
   margin-right: 30px;
 }
 
-.main__services .services__service h3 {
+.main__services .services__service .service__header h3 {
   font-family: 'Raleway Semibold' , sans-serif;
   color: #061e37;
   font-size: 15pt;
+  margin: 0;
 }
 
-.main__services .services__service .fa-sort-down {
+.main__services .services__service .service__header .fa-sort-down {
   position: absolute;
   margin-right: 0;
   right: 30px;
 }
 
-.main__services .services__service:hover {
-  background-color: #061e37;
+.main__services .services__service .service__content {
+  font-family: 'Raleway Regular' , sans-serif;
+  margin-top: 20px;
+  font-size: 13pt;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main__services .services__service:hover i, .main__services .services__service:hover h3 {
-  color: white;
+.main__services .services__service .service__content img {
+  max-height: 155px;
+  max-width: auto;
+  margin-right: 25px;
+}
+
+.main__services .services__service:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 body {
