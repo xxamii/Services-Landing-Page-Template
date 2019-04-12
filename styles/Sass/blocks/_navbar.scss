@@ -59,7 +59,6 @@
         background-color: transparent;
         border: 1px solid white;
         border-radius: 8px;
-        color: white;
         width: 100px;
         height: 40px;
         padding: 5px 18px;
@@ -67,9 +66,16 @@
         cursor: pointer;
         transition: 0.15s;
 
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
         &:hover{
             background-color: white;
-            color: $blue;
+            a {
+                color: $blue;
+            }
         }
     }
 }
