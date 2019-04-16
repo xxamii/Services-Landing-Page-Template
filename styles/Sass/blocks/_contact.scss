@@ -1,0 +1,109 @@
+.contact {
+    background-color: #fafafa;
+    padding: 100px 0;
+
+    .contact__wrapper {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+        .contact__title {
+            margin-bottom: 55px;
+
+            h1 {
+                @include bold();
+                font-size: 42pt;
+                color: $blue;
+                margin-bottom: 15px;
+            }
+            p {
+                @include reg();
+                font-size: 13pt;
+                color: $gray;
+            }
+        }
+
+        .contact__form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            column-gap: 40px;
+            row-gap: 20px;
+            margin: 0 auto;
+            width: 40%;
+            height: auto;
+
+            textarea {
+                resize: none;
+            }
+
+            .form, textarea {
+
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid $blue;
+                border-radius: 5px;
+                margin: 0;
+                outline: none; 
+
+                &::placeholder {
+                    @include reg();
+                    color: $blue;
+                }
+            }
+
+            .form {
+                max-height: 50px;
+            }
+
+            textarea {
+                max-height: 150px;
+            }
+            
+            .contact__button {
+                @include bold();
+                background-color: $green;
+                color: white;
+                padding: 25px 45px;
+                border: 1px solid transparent;
+                border-radius: 8px;
+                font-size: 13pt;
+                transition: 0.15s;
+                cursor: pointer;
+                
+                -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+
+                &:hover {
+                    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                    transform: translateY(3px);
+                }
+            }
+
+            .subscribtion {
+
+                #subscribe {
+                    @include reg();
+                    font-size: 13pt;
+                    color: $blue;
+                }
+
+                #subscribtion {
+                    appearance: none;
+                    background-color: transparent;
+                    border: 1px solid $blue;
+                    border-radius: 4px;
+                    padding: 7px;
+                    outline: none;
+
+                    &:checked {
+                        background-color: $blue;
+                    }
+                }
+            }    
+        }
+    }
+}
