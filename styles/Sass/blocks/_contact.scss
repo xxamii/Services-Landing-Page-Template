@@ -26,7 +26,7 @@
         .contact__form {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
             column-gap: 40px;
             row-gap: 20px;
             margin: 0 auto;
@@ -52,12 +52,11 @@
                 }
             }
 
-            .form {
-                max-height: 50px;
-            }
-
             textarea {
-                max-height: 150px;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 6;
             }
             
             .contact__button {
@@ -69,6 +68,8 @@
                 border-radius: 8px;
                 font-size: 13pt;
                 transition: 0.15s;
+                justify-self: end;
+                max-width: 50%;
                 cursor: pointer;
                 
                 -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
@@ -84,6 +85,8 @@
             }
 
             .subscribtion {
+                display: flex;
+                align-items: center;
 
                 #subscribe {
                     @include reg();
@@ -94,10 +97,11 @@
                 #subscribtion {
                     appearance: none;
                     background-color: transparent;
-                    border: 1px solid $blue;
+                    border: 2px solid $blue;
                     border-radius: 4px;
                     padding: 7px;
                     outline: none;
+                    margin-right: 10px;
 
                     &:checked {
                         background-color: $blue;
