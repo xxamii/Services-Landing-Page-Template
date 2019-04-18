@@ -1,74 +1,79 @@
 .services {
     padding: 100px 0;
 
-    .services__title {
-        text-align: center;
-        margin-bottom: 50px;
+    .services__wrapper {
+        width: 90%;
+        margin: 0 auto;
 
-        h1 {
-            @include bold();
-            font-size: 42pt;
-            color: $blue;
-            margin-bottom: 15px;    
-        }
-        p {
-            @include reg();
-            font-size: 13pt;
-            color: $gray;
-        }
-    }
+        .services__title {
+            text-align: center;
+            margin-bottom: 50px;
 
-    .services__service {
-        width: 65%;
-        border-radius: 8px;
-        padding: 20px 30px;
-        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
-        margin: 0 auto 20px auto;
-        cursor: pointer;
-        transition: 0.15s;
-        position: relative;
-
-        .service__header {
-            align-items: center;
-            display: flex;
-
-            i {
-                color: $blue;
-                height: 15px;
-                width: auto;
-                margin-right: 30px;
-            }
-            h3 {
+            h1 {
                 @include bold();
+                font-size: 42pt;
                 color: $blue;
-                font-size: 15pt;
-                margin: 0;
+                margin-bottom: 15px;    
             }
-            .fa-sort-down {
-                position: absolute;
-                margin-right: 0;
-                right: 30px;
-            }
-        }    
-
-        .service__content {
-            @include reg();
-            margin-top: 20px;
-            font-size: 13pt;
-            display: none;
-            align-items: center;
-
-            
-
-            img {
-                max-height: 155px;
-                max-width: auto;
-                margin-right: 25px;
+            p {
+                @include reg();
+                font-size: 13pt;
+                color: $gray;
             }
         }
 
-        &:hover {
-            transform: scale(1.02);
+        .services__service {
+            width: 65%;
+            border-radius: 8px;
+            padding: 20px 30px;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+            margin: 0 auto 20px auto;
+            cursor: pointer;
+            transition: 0.15s;
+            position: relative;
+
+            .service__header {
+                align-items: center;
+                display: flex;
+
+                i {
+                    color: $blue;
+                    height: 15px;
+                    width: auto;
+                    margin-right: 30px;
+                }
+                h3 {
+                    @include bold();
+                    color: $blue;
+                    font-size: 15pt;
+                    margin: 0;
+                }
+                .fa-sort-down {
+                    position: absolute;
+                    margin-right: 0;
+                    right: 30px;
+                }
+            }    
+
+            .service__content {
+                @include reg();
+                margin-top: 20px;
+                font-size: 13pt;
+                display: none;
+                align-items: center;
+
+                
+
+                img {
+                    max-height: 155px;
+                    max-width: auto;
+                    margin-right: 25px;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.02);
+            }
         }
     }
 }

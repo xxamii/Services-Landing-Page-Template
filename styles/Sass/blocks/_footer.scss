@@ -72,6 +72,7 @@
                 a {
                     @include bold();
                     color: white;
+                    opacity: .5;
                     text-decoration: none;
                     transition: 0.15s;
                     font-size: 12pt;
@@ -82,7 +83,7 @@
                     }
         
                     &:hover{
-                        color: $gray;
+                        opacity: 1;
                     }
                 }
             }
@@ -95,13 +96,14 @@
                     text-decoration: none;
                     margin-right: 30px;
                     color: white;
+                    opacity: .5;
                     transition: 0.15s;
 
                     &:last-child {
                         margin-right: 0;
                     }
                     &:hover {
-                        opacity: 0.2;
+                        opacity: 1;
                     }
                 }
             }

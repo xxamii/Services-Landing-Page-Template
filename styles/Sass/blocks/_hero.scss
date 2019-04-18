@@ -1,58 +1,62 @@
 .hero {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
     padding: 120px 0 190px 0;
 
-    .hero__offer {
-        
-        .hero__h {
-            @include extrabold();
-            color: white;
-            font-size: 52pt;
-            margin: 0;
-        }
+    .hero__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
 
-        .hero__p {
-            @include reg();
-            color: white;
-            font-size: 16pt;
-        }
-
-        .hero__button {
-            @include extrabold();
-            padding: 20px 40px;
-            border: 1px solid transparent;
-            border-radius: 8px;
-            cursor: pointer;
-            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-            -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-            transition: 0.15s;
-            outline: none;
-
-            a {
-                text-decoration: none;
-                color: white;
-            }
+        .hero__offer {
             
-            &:hover {
-                -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                transform: translateY(3px);
+            .hero__h {
+                @include extrabold();
+                color: white;
+                font-size: 52pt;
+                margin: 0;
+            }
+
+            .hero__p {
+                @include reg();
+                color: white;
+                font-size: 16pt;
+            }
+
+            .hero__button {
+                @include extrabold();
+                padding: 20px 40px;
+                border: 1px solid transparent;
+                border-radius: 8px;
+                cursor: pointer;
+                -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+                transition: 0.15s;
+                outline: none;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                
+                &:hover {
+                    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                    transform: translateY(3px);
+                }
+            }
+            .btn1 {
+                background-color: $blue;
+                color: white;
+                margin-right: 30px;
+            }
+            .btn2 {
+                a {
+                    color: $blue;
+                }
+                background-color: white;
             }
         }
-        .btn1 {
-            background-color: $blue;
-            color: white;
-            margin-right: 30px;
-        }
-        .btn2 {
-            a {
-                color: $blue;
-            }
-            background-color: white;
-        }
-    }
+    }    
 }

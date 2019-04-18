@@ -2,75 +2,80 @@
     padding: 100px 0;
     text-align: center;
 
-    .easy__title {
-        text-align: center;
-        margin-bottom: 90px;
+    .easy__wrapper {
+        width: 90%;
+        margin: 0 auto;
 
-        h1 {
-            @include bold();
-            font-size: 42pt;
-            color: $blue;
-            margin-bottom: 15px;    
-        }
-        h3 {
-            @include bold();
-            font-size: 22pt;
-            color: $gray;
-            margin-bottom: 20px;
-        }
-        p {
-            @include reg();
-            font-size: 13pt;
-            color: $gray;
-        }
-    }
-
-    .easy__cards {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 80px;
-
-        .easy__card {
+        .easy__title {
             text-align: center;
+            margin-bottom: 90px;
 
+            h1 {
+                @include bold();
+                font-size: 42pt;
+                color: $blue;
+                margin-bottom: 15px;    
+            }
             h3 {
                 @include bold();
-                font-size: 20pt;
-                color: $blue;
+                font-size: 22pt;
+                color: $gray;
+                margin-bottom: 20px;
             }
             p {
                 @include reg();
                 font-size: 13pt;
-                color: $darkgray;
-                margin: 10px;
-            } 
-        }
-    }
-
-    .easy__button {
-        @include bold();
-        background-color: $green;
-        padding: 20px 30px;
-        border: 1px solid transparent;
-        border-radius: 8px;
-        font-size: 15pt;
-        transition: 0.15s;
-        cursor: pointer;
-        
-        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-
-        a {
-            text-decoration: none;
-            color: white;
+                color: $gray;
+            }
         }
 
-        &:hover {
-            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-            transform: translateY(3px);
+        .easy__cards {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 80px;
+
+            .easy__card {
+                text-align: center;
+
+                h3 {
+                    @include bold();
+                    font-size: 20pt;
+                    color: $blue;
+                }
+                p {
+                    @include reg();
+                    font-size: 13pt;
+                    color: $darkgray;
+                    margin: 10px;
+                } 
+            }
         }
-    }
+
+        .easy__button {
+            @include bold();
+            background-color: $green;
+            padding: 20px 30px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            font-size: 15pt;
+            transition: 0.15s;
+            cursor: pointer;
+            
+            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            &:hover {
+                -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                transform: translateY(3px);
+            }
+        }
+    }   
 }

@@ -1,81 +1,84 @@
 .navbar {
-    display: flex;
     padding: 50px 0;
-    color: white;
-    justify-content: space-between;
-    width: 100%;
 
-    
-    .navbar__logo {
-        color: white;
-        text-decoration: none;
+    .navbar__wrapper {
         display: flex;
-        align-items: center;
-
-        p , strong {
-            padding: 0;
-            margin: 0;
-            font-size: 15pt;
-        }
-
-        p {
-            @include reg();
-        }
-
-        strong {
-            @include extrabold();
-        }
-
-        img {
-            height: 40px;
-            width: 40px;
-            margin-right: 10px;
-        }
-
-    }
-
-    .navbar__nav {
-        
-        a {
-            @include bold();
+        color: white;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 90%;
+    
+        .navbar__logo {
             color: white;
             text-decoration: none;
-            transition: 0.15s;
-            font-size: 15pt;
-            margin-right: 50px;
+            display: flex;
+            align-items: center;
 
-            &:last-child {
-                margin-right: 0;
+            p , strong {
+                padding: 0;
+                margin: 0;
+                font-size: 15pt;
+            }
+
+            p {
+                @include reg();
+            }
+
+            strong {
+                @include extrabold();
+            }
+
+            img {
+                height: 40px;
+                width: 40px;
+                margin-right: 10px;
+            }
+
+        }
+
+        .navbar__nav {
+            
+            a {
+                @include bold();
+                color: white;
+                text-decoration: none;
+                transition: 0.15s;
+                font-size: 15pt;
+                margin-right: 50px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover{
+                    color: $blue;
+                }
+            }
+
+        }
+
+        .navbar__button {
+            @include reg();
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 8px;
+            width: 100px;
+            height: 40px;
+            padding: 5px 18px;
+            font-size: 12pt;
+            cursor: pointer;
+            transition: 0.15s;
+
+            a {
+                text-decoration: none;
+                color: white;
             }
 
             &:hover{
-                color: $blue;
-            }
-        }
-
-    }
-
-    .navbar__button {
-        @include reg();
-        background-color: transparent;
-        border: 1px solid white;
-        border-radius: 8px;
-        width: 100px;
-        height: 40px;
-        padding: 5px 18px;
-        font-size: 12pt;
-        cursor: pointer;
-        transition: 0.15s;
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        &:hover{
-            background-color: white;
-            a {
-                color: $blue;
+                background-color: white;
+                a {
+                    color: $blue;
+                }
             }
         }
     }
