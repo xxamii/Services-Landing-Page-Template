@@ -905,6 +905,157 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 30px 0;
+  }
+  .navbar .navbar__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .navbar .navbar__wrapper .navbar__logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .navbar .navbar__wrapper .navbar__logo p, .navbar .navbar__wrapper .navbar__logo strong {
+    display: none;
+  }
+  .navbar .navbar__wrapper .navbar__logo img {
+    height: auto;
+    width: auto;
+    margin-right: 0;
+  }
+  .navbar .navbar__wrapper .navbar__nav {
+    margin-bottom: 20px;
+  }
+  .navbar .navbar__wrapper .navbar__nav a {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .navbar .navbar__wrapper .navbar__nav a:last-child {
+    margin: 0;
+  }
+  .navbar .navbar__wrapper .navbar__nav a:hover {
+    color: white;
+  }
+  .navbar .navbar__wrapper .navbar__button {
+    padding: 5px 15px;
+    -webkit-transition: 0;
+    transition: 0;
+    margin: 0 auto;
+  }
+  .navbar .navbar__wrapper .navbar__button:hover {
+    background-color: transparent;
+  }
+  .navbar .navbar__wrapper .navbar__button:hover a {
+    color: white;
+  }
+  .hero {
+    padding: 30px 0;
+  }
+  .hero .hero__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero__wrapper .hero__offer {
+    text-align: center;
+  }
+  .hero .hero__wrapper .hero__offer .hero__h {
+    font-size: 30pt;
+  }
+  .hero .hero__wrapper .hero__offer .hero__p {
+    font-size: 13pt;
+  }
+  .hero .hero__wrapper .hero__offer .hero__button {
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -webkit-transition: 0;
+    transition: 0;
+  }
+  .hero .hero__wrapper .hero__offer .hero__button:hover {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .hero .hero__wrapper .hero__offer .btn1 {
+    margin-bottom: 10px;
+  }
+  .easy {
+    padding: 30px 0;
+  }
+  .easy .easy__wrapper .easy__title {
+    margin-bottom: 50px;
+  }
+  .easy .easy__wrapper .easy__title h1 {
+    font-size: 25pt;
+  }
+  .easy .easy__wrapper .easy__title h3 {
+    font-size: 16pt;
+  }
+  .easy .easy__wrapper .easy__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .easy .easy__wrapper .easy__cards .easy__card {
+    margin-bottom: 40px;
+  }
+  .easy .easy__wrapper .easy__cards .easy__card:last-child {
+    margin-bottom: 0;
+  }
+  .easy .easy__wrapper .easy__cards .easy__card h3 {
+    font-size: 17pt;
+  }
+  .easy .easy__wrapper .easy__button {
+    padding: 15px 30px;
+    font-size: 13pt;
+    -webkit-transition: 0;
+    transition: 0;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .easy .easy__wrapper .easy__button:hover {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .statistics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statistics .statistics__count {
+    width: 100%;
+    padding: 20px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .statistics .statistics__count img {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
