@@ -38,11 +38,9 @@
 
                 i {
                     color: $blue;
-                    height: 15px;
-                    width: auto;
                     margin-right: 30px;
                 }
-                h3 {
+                p {
                     @include bold();
                     color: $blue;
                     font-size: 15pt;
