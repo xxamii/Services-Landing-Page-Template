@@ -22,7 +22,7 @@
                 margin-top: 0;
             }
             .title__p {
-                font-size: 13pt;
+                font-size: 15pt;
                 margin-bottom: 80px;
                 margin-top: 15px;
             }
@@ -80,12 +80,12 @@
 
                     .comment__nickname {
                         @include bold();
-                        font-size: 16pt;
+                        font-size: 18pt;
                         margin-top: 0;
                     }
                     .comment__content {
                         @include reg();
-                        font-size: 13pt;
+                        font-size: 15pt;
                         margin-bottom: 0;
                     }
                 }

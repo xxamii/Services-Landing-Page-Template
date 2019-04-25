@@ -31,7 +31,10 @@
 //footer
 @import './blocks/footer';
 
-//media queries 
+//media query tablets
+@import './mediaqueries-t';
+
+//media query mobile
 @import './mediaqueries-m';
 
 * {

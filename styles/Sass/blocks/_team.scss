@@ -17,7 +17,7 @@
             }
             p {
                 @include reg();
-                font-size: 13pt;
+                font-size: 15pt;
                 color: $gray;
             }
         }
@@ -28,11 +28,11 @@
             h3 {
                 @include bold();
                 color: $blue;
-                font-size: 16pt;
+                font-size: 18pt;
             }
             p {
                 @include reg();
-                font-size: 13pt;
+                font-size: 15pt;
                 color: $darkgray;
             }
 

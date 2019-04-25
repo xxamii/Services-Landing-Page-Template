@@ -17,7 +17,7 @@
             }
             p {
                 @include reg();
-                font-size: 13pt;
+                font-size: 15pt;
                 color: $gray;
             }
         }
@@ -56,7 +56,7 @@
             .service__content {
                 @include reg();
                 margin-top: 20px;
-                font-size: 13pt;
+                font-size: 15pt;
                 display: none;
                 align-items: center;
 
