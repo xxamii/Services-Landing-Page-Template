@@ -92,8 +92,6 @@
   background-color: transparent;
   border: 1px solid white;
   border-radius: 8px;
-  width: 100px;
-  height: 40px;
   padding: 5px 18px;
   font-size: 13pt;
   cursor: pointer;
@@ -902,11 +900,113 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 992px) {
-  .footer {
-    padding: 65px 0;
+@media screen and (max-width: 1100px) {
+  .navbar .navbar__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .navbar__wrapper .navbar__logo {
+    margin-bottom: 35px;
+  }
+  .navbar .navbar__wrapper .navbar__nav {
+    margin-bottom: 35px;
+  }
+  .navbar .navbar__wrapper .navbar__button {
+    width: 100px;
+    height: 40px;
   }
   .footer .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer .footer__wrapper .footer__about {
+    margin-bottom: 55px;
+  }
+  .footer .footer__wrapper .footer__links .footer__social {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar, .hero, .easy, .satistics, .services, .testimonials, .team, .contact, .footer {
+    padding: 65px 0;
+  }
+  .easy .easy__wrapper .easy__cards {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .easy .easy__wrapper .easy__cards .easy__card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 50%;
+  }
+  .easy .easy__wrapper .easy__cards .easy__card:last-child {
+    margin-top: 50px;
+  }
+  .statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .statistics .statistics__count {
+    width: 50%;
+  }
+  .testimonials .testimonials__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonials .testimonials__wrapper .testimonials__title {
+    margin-bottom: 70px;
+  }
+  .testimonials .testimonials__wrapper .testimonials__title .title__p {
+    margin-bottom: 50px;
+  }
+  .footer .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -945,6 +1045,7 @@
   }
   .footer .footer__wrapper .footer__links .footer__social {
     right: auto;
+    left: auto;
     margin-top: 55px;
   }
 }
@@ -1061,12 +1162,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .easy .easy__wrapper .easy__cards .easy__card {
     margin-bottom: 40px;
+    width: auto;
   }
   .easy .easy__wrapper .easy__cards .easy__card:last-child {
     margin-bottom: 0;
+    margin-top: 0;
   }
   .easy .easy__wrapper .easy__cards .easy__card h3 {
     font-size: 18pt;
@@ -1085,24 +1190,8 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .statistics {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .statistics .statistics__count {
-    width: 100%;
     padding: 20px 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .statistics .statistics__count img {
-    margin: 0;
-    margin-bottom: 10px;
   }
   .services {
     padding: 50px 0;
@@ -1142,18 +1231,6 @@
   }
   .testimonials {
     padding: 50px 0;
-  }
-  .testimonials .testimonials__wrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .testimonials .testimonials__wrapper .testimonials__title {
     text-align: center;
@@ -1287,21 +1364,6 @@
   .footer {
     padding: 50px 0;
   }
-  .footer .footer__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .footer .footer__wrapper .footer__about {
     margin: 0;
   }
@@ -1374,6 +1436,25 @@
   }
   .easy .easy__wrapper .easy__button {
     font-size: 10pt;
+  }
+  .statistics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statistics .statistics__count {
+    width: 100%;
+    padding: 20px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .statistics .statistics__count img {
+    margin: 0;
+    margin-bottom: 10px;
   }
   .services {
     padding: 30px 0;

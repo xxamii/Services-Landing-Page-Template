@@ -1,9 +1,62 @@
 @media screen and (max-width: 992px) {
+
+    .navbar , .hero , .easy , .satistics , .services , .testimonials , .team , .contact , .footer {
+        padding: 65px 0;
+    }
+
+    .easy {
+        .easy__wrapper {
+
+            .easy__cards {
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-direction: row;
+
+                .easy__card {
+                    flex-grow: 1;
+                    width: 50%;
+
+                    &:last-child {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .statistics {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    
+        .statistics__count {
+            width: 50%;
+        }
+    }
+
+    .testimonials {
+
+        .testimonials__wrapper {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .testimonials__title {
+                margin-bottom: 70px;
+
+                .title__p {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
     
     .footer {
-        padding: 65px 0;
         
         .footer__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
 
             .footer__about {
@@ -22,6 +75,7 @@
 
                 .footer__social {
                     right: auto;
+                    left: auto;
                     margin-top: 55px;
                 }
             }

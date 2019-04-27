@@ -48,6 +48,22 @@
         }
     }
 
+    .statistics {
+        flex-direction: column;
+
+        .statistics__count {
+            width: 100%;
+            padding: 20px 0;
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
     .services {
         padding: 30px 0;
 

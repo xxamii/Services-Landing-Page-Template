@@ -50,6 +50,7 @@
     
                 &:hover{
                     background-color: transparent;
+
                     a {
                         color: white;
                     }
@@ -120,12 +121,15 @@
                 justify-content: center;
                 margin-bottom: 50px;
                 flex-direction: column;
+                flex-wrap: nowrap;
     
                 .easy__card {
                     margin-bottom: 40px;
+                    width: auto;
 
                     &:last-child {
                         margin-bottom: 0;
+                        margin-top: 0;
                     }
     
                     h3 {
@@ -154,18 +158,9 @@
     }
 
     .statistics {
-        flex-direction: column;
 
         .statistics__count {
-            width: 100%;
             padding: 20px 0;
-            flex-direction: column;
-            text-align: center;
-
-            img {
-                margin: 0;
-                margin-bottom: 10px;
-            }
         }
     }
 
@@ -216,10 +211,7 @@
     .testimonials {
         padding: 50px 0;
 
-        .testimonials__wrapper{
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+        .testimonials__wrapper {
 
             .testimonials__title {
                 text-align: center;
@@ -369,10 +361,6 @@
         padding: 50px 0;
 
         .footer__wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
 
             .footer__about {
                 margin: 0;
