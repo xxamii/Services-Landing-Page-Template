@@ -22,6 +22,24 @@
         }
     }
 
+    .services {
+
+        .services__wrapper {
+
+            .services__service {
+                width: 80%;
+
+                .service__content {
+                    flex-direction: column;
+
+                    img {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
     .footer {
 
         .footer__wrapper {
