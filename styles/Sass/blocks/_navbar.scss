@@ -55,6 +55,10 @@
                 }
             }
 
+            #nav__button {
+                display: none;
+            }
+
         }
 
         .navbar__button {
@@ -78,6 +82,13 @@
                     color: $blue;
                 }
             }
+        }
+
+        .navbar__burger {
+            color: white;
+            font-size: 16pt;
+            cursor: pointer;
+            display: none;
         }
     }
 }

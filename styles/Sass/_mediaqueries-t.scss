@@ -6,7 +6,8 @@
         .navbar__wrapper {
             justify-content: start;
             flex-direction: column;
-            text-align: start;
+            text-align: left;
+            position: relative;
 
             .navbar__logo {
                 margin-bottom: 20px;
@@ -24,6 +25,7 @@
 
             .navbar__nav {
                 margin-bottom: 20px;
+                display: none;
             
                 a {
                     margin-right: 0;
@@ -31,30 +33,32 @@
                     margin-bottom: 10px;
                     font-size: 13pt;
 
-                    &:last-child {
-                        margin: 0;
+                    &:nth-child(5) {
+                        margin-bottom: 24px;
                     }
     
                     &:hover{
                         color: white;
                     }
                 }
-    
+                
+                #nav__button {
+                    display: inline;
+                    border: 1px solid white;
+                    padding: 10px 12px;
+                    font-size: 11pt;
+                    border-radius: 8px;           
+                }
             }
 
             .navbar__button {
-                padding: 6px 10px;
-                font-size: 13pt;
-                transition: 0;
-                margin: 0;
-    
-                &:hover{
-                    background-color: transparent;
+                display: none;
+            }
 
-                    a {
-                        color: white;
-                    }
-                }
+            .navbar__burger {
+                display: inline;
+                position: absolute;
+                right: 0;
             }
         }
     }
@@ -251,34 +255,33 @@
             }
 
             .testimonials__customers {
-    
-                .customers__customer {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 40px;
-                    justify-content: center;
-                    flex-direction: column;
-    
-                    &:nth-child(3) {
-                        margin-bottom: 0;
-                    }
-    
-                    .customer__comment {
-                        padding: 30px;
-    
-                        .comment__nickname {
-                            font-size: 18pt;
+
+                .customers__review {
+
+                    .customers__customer {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 40px;
+                        justify-content: center;
+                        flex-direction: column;
+        
+                        .customer__comment {
+                            padding: 30px;
+        
+                            .comment__nickname {
+                                font-size: 18pt;
+                            }
+                            .comment__content {
+                                font-size: 15pt;
+                            }
                         }
-                        .comment__content {
-                            font-size: 15pt;
+        
+                        img {
+                            margin-right: 0;
+                            max-width: auto;
+                            max-height: auto;
+                            margin-bottom: 15px;
                         }
-                    }
-    
-                    img {
-                        margin-right: 0;
-                        max-width: auto;
-                        max-height: auto;
-                        margin-bottom: 15px;
                     }
                 }
     
