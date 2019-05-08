@@ -71,6 +71,7 @@
 
             .hero__offer {
                 text-align: center;
+                margin-bottom: 55px;
                 
                 .hero__h {
                     font-size: 26pt;
@@ -100,6 +101,22 @@
                 }
                 .btn1 {
                     margin-right: 15px;
+                }
+            }
+
+            .hero__modal-trigger {
+                max-width: 80%;
+                margin: 0 auto;
+
+                i {
+                    font-size: 3rem;
+                }
+            }
+
+            .hero__video-modal {
+
+                video{
+                    width: 100%;
                 }
             }
         }

@@ -14,17 +14,22 @@ $(window).on('load' , function() {
         }
     });
 
+    //video modal 
+
+    $('.hero__modal-trigger').on('click' , function() {
+        $('.hero__video-modal').css('display' , 'block');
+        $('.close').on('click' , function() {
+            $('.hero__video-modal').css('display' , 'none');
+        })
+    });
+
     // services accordion
+    $('.services__service').children('.service__content').hide();
 
     $('.services__service').on('click' , function() {
         var elem = $(this).children('.service__content');
 
         elem.slideToggle('fast');
-        if(elem.css('display') == 'flex') {
-            elem.css('display' , 'none');
-        } else {
-            elem.css('display' , 'flex');
-        }
     });
 
     // team photos

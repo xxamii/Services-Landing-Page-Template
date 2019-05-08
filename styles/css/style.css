@@ -136,6 +136,8 @@
           justify-content: space-between;
   width: 90%;
   margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .hero .hero__wrapper .hero__offer .hero__h {
@@ -188,6 +190,108 @@
 
 .hero .hero__wrapper .hero__offer .btn2 a {
   color: #061e37;
+}
+
+.hero .hero__wrapper .hero__modal-trigger {
+  color: #061e37;
+  background: url("../../images/video-prev-op0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  border: 2px solid #061e37;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  max-width: 600px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.hero .hero__wrapper .hero__modal-trigger:hover {
+  color: #1de9b6;
+}
+
+.hero .hero__wrapper .hero__modal-trigger i {
+  font-size: 5rem;
+  margin-top: 1em;
+}
+
+.hero .hero__wrapper .hero__modal-trigger p {
+  font-family: 'Raleway Semibold' , sans-serif;
+  text-transform: uppercase;
+  font-size: 15pt;
+  margin-bottom: 4em;
+}
+
+@media (min-width: 769px) and (max-width: 1500px) {
+  .hero .hero__wrapper .hero__modal-trigger {
+    margin-top: 50px;
+  }
+}
+
+.hero .hero__wrapper .hero__video-modal {
+  display: none;
+  position: fixed;
+  padding-top: 150px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero .hero__wrapper .hero__video-modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-animation: scale 0.6s;
+          animation: scale 0.6s;
+}
+
+.hero .hero__wrapper .hero__video-modal .close:hover, .hero .hero__wrapper .hero__video-modal .close:active {
+  color: #bbb;
+}
+
+.hero .hero__wrapper .hero__video-modal video {
+  width: 150%;
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  -webkit-animation: scale 0.6s;
+          animation: scale 0.6s;
+}
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .easy {
@@ -396,7 +500,9 @@
   font-family: 'Raleway Regular' , sans-serif;
   margin-top: 20px;
   font-size: 15pt;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1149,6 +1255,7 @@
   }
   .hero .hero__wrapper .hero__offer {
     text-align: center;
+    margin-bottom: 55px;
   }
   .hero .hero__wrapper .hero__offer .hero__h {
     font-size: 26pt;
@@ -1175,6 +1282,16 @@
   }
   .hero .hero__wrapper .hero__offer .btn1 {
     margin-right: 15px;
+  }
+  .hero .hero__wrapper .hero__modal-trigger {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .hero .hero__wrapper .hero__modal-trigger i {
+    font-size: 3rem;
+  }
+  .hero .hero__wrapper .hero__video-modal video {
+    width: 100%;
   }
   .easy {
     padding: 50px 0;
@@ -1461,6 +1578,15 @@
   }
   .hero .hero__wrapper .hero__offer .btn1 {
     margin-bottom: 10px;
+  }
+  .hero .hero__wrapper .hero__modal-trigger {
+    max-width: 100%;
+  }
+  .hero .hero__wrapper .hero__modal-trigger i {
+    margin-top: 0.5em;
+  }
+  .hero .hero__wrapper .hero__modal-trigger p {
+    margin-bottom: 2em;
   }
   .easy {
     padding: 30px 0;
