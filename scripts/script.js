@@ -20,11 +20,11 @@ $(window).on('load' , function() {
         var elem = $(this).children('.service__content');
 
         elem.slideToggle('fast');
-        // if(elem.css('display') == 'flex') {
-        //     elem.css('display' , 'none');
-        // } else {
-        //     elem.css('display' , 'flex');
-        // }
+        if(elem.css('display') == 'flex') {
+            elem.css('display' , 'none');
+        } else {
+            elem.css('display' , 'flex');
+        }
     });
 
     // team photos
