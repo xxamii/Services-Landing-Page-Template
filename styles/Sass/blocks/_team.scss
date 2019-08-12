@@ -3,7 +3,8 @@
 
     .team__wrapper {
         text-align: center;
-        width: 90%;
+        max-width: 700px;
+        padding: 0 10px;
         margin: 0 auto;
 
         .team__title {
@@ -11,13 +12,13 @@
 
             h1 {
                 @include bold();
-                font-size: 42pt;
+                font-size: 42px;
                 color: $blue;
                 margin-bottom: 15px;
             }
             p {
                 @include reg();
-                font-size: 15pt;
+                font-size: 15px;
                 color: $gray;
             }
         }
@@ -28,11 +29,11 @@
             h3 {
                 @include bold();
                 color: $blue;
-                font-size: 18pt;
+                font-size: 18px;
             }
             p {
                 @include reg();
-                font-size: 15pt;
+                font-size: 15px;
                 color: $darkgray;
             }
 
@@ -47,6 +48,8 @@
                     margin-right: 40px;
                     cursor: pointer;
                     opacity: 0.2;
+                    transition: all 0.3s;
+                    border-radius: 50%;
 
                     &:last-child {
                         margin-right: 0;
@@ -54,12 +57,15 @@
                 }
 
                 .photos__photo-current {                    
-                    transform: scale(1.2);
+                    transform: scale(1.1);
                     border: 10px solid white;
-                    border-radius: 50%;
                     opacity: 1;
                     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13);
                 }
+            }
+
+            .team__description {
+                max-width: 655px;
             }
 
             .team__social {

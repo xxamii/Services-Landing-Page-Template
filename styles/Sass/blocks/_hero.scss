@@ -4,7 +4,7 @@
     .hero__wrapper {
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        align-items: center;
         margin: 0 auto;
         flex-wrap: wrap;
 
@@ -13,14 +13,14 @@
             .hero__h {
                 @include extrabold();
                 color: white;
-                font-size: 52pt;
+                font-size: 52px;
                 margin: 0;
             }
 
             .hero__p {
                 @include reg();
                 color: white;
-                font-size: 16pt;
+                font-size: 16px;
             }
 
             .hero__button {
@@ -29,8 +29,6 @@
                 border: 1px solid transparent;
                 border-radius: 8px;
                 cursor: pointer;
-                -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
                 box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
                 transition: 0.15s;
                 outline: none;
@@ -41,9 +39,7 @@
                 }
                 
                 &:hover {
-                    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                    box-shadow: none;
                     transform: translateY(3px);
                 }
             }
@@ -62,14 +58,13 @@
 
         .hero__modal-trigger {
             color: $blue;
+            display: inline-block;
             background: url('../../images/video-prev-op0.png');
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
             border: 2px solid $blue;
             border-radius: 8px;
-            -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
-            -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
             width: 80%;
             max-width: 600px;
@@ -87,7 +82,7 @@
             p {
                 @include bold();
                 text-transform: uppercase;
-                font-size: 15pt;
+                font-size: 15px;
                 margin-bottom: 4em;
             }
 

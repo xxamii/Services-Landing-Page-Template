@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
     .navbar {
         padding: 30px 0;
@@ -14,7 +14,6 @@
                 
                 p , strong {
                     text-align-last: left;
-                    font-size: 13pt;
                 }
                 img {
                     height: auto;
@@ -31,7 +30,6 @@
                     margin-right: 0;
                     display: block;
                     margin-bottom: 10px;
-                    font-size: 13pt;
 
                     &:nth-child(5) {
                         margin-bottom: 24px;
@@ -46,7 +44,6 @@
                     display: inline;
                     border: 1px solid white;
                     padding: 10px 12px;
-                    font-size: 11pt;
                     border-radius: 8px;           
                 }
             }
@@ -58,7 +55,7 @@
             .navbar__burger {
                 display: inline;
                 position: absolute;
-                right: 0;
+                right: 10px;
             }
         }
     }
@@ -72,13 +69,8 @@
             .hero__offer {
                 text-align: center;
                 margin-bottom: 55px;
-                
-                .hero__h {
-                    font-size: 26pt;
-                }
 
                 .hero__p {
-                    font-size: 15pt;
                     margin-bottom: 50px;
                 }
 
@@ -86,18 +78,7 @@
                     padding: 12px 15px;
                     border: 1px solid transparent;
                     margin: 0 auto;
-                    font-size: 11pt;
-                    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
                     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                    transition: 0;
-                    
-                    &:hover {
-                        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                        -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                        transform: translateY(0);
-                    }
                 }
                 .btn1 {
                     margin-right: 15px;
@@ -129,13 +110,6 @@
 
             .easy__title {
                 margin-bottom: 50px;
-    
-                h1 {
-                    font-size: 26pt;    
-                }
-                h3 {
-                    font-size: 18pt;
-                }
             }
 
             .easy__cards {
@@ -152,28 +126,13 @@
                         margin-bottom: 0;
                         margin-top: 0;
                     }
-    
-                    h3 {
-                        font-size: 18pt;
-                    }
                 }
             }
 
             .easy__button {
                 padding: 15px 17px;
-                font-size: 11pt;
                 transition: 0;
-                
-                -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
                 box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-    
-                &:hover {
-                    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                    transform: translateY(0);
-                }
             }
         }
     }
@@ -190,13 +149,6 @@
 
         .services__wrapper {
 
-            .services__title {
-    
-                h1 {
-                    font-size: 26pt;   
-                }
-            }
-
             .services__service {
                 padding: 15px 20px;
                 box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
@@ -211,7 +163,6 @@
                 .service__header {
 
                     .fa-sort-down {
-                        font-size: 11pt;
                         right: 1em;
                     }
                 }
@@ -227,10 +178,6 @@
                         margin-bottom: 20px;
                     }
                 }
-    
-                &:hover {
-                    transform: scale(1);
-                }
             }
         }
     }
@@ -245,7 +192,6 @@
                 margin-bottom: 50px;
 
                 .title__h {
-                    font-size: 26pt;
                     margin-bottom: 30px;
                 }
                 .title__p {
@@ -255,19 +201,7 @@
     
                 .testimonials__button {
                     padding: 12px 15px;
-                    font-size: 11pt;
-                    transition: 0;
-    
-                    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
                     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-    
-                    &:hover {
-                        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                        -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                        transform: translateY(0);
-                    }
                 }
             }
 
@@ -284,13 +218,6 @@
         
                         .customer__comment {
                             padding: 30px;
-        
-                            .comment__nickname {
-                                font-size: 18pt;
-                            }
-                            .comment__content {
-                                font-size: 15pt;
-                            }
                         }
         
                         img {
@@ -300,10 +227,6 @@
                             margin-bottom: 15px;
                         }
                     }
-                }
-    
-                i {
-                    display: none;
                 }
             }
         }
@@ -316,10 +239,6 @@
 
             .team__title {
                 margin-bottom: 50px;
-
-                h1 {
-                    font-size: 23pt;
-                }
             }
         }
     }
@@ -331,10 +250,6 @@
 
             .contact__title {
                 margin-bottom: 40px;
-    
-                h1 {
-                    font-size: 23pt;
-                }
             }
 
             .contact__form {
@@ -345,35 +260,17 @@
                 width: 100%;
     
                 .form, textarea {   
-                    margin: 15px auto 15px auto;
-                    font-size: 15pt;
-                    width: 90%;
+                    width: 100%;
+                    margin-bottom: 10px;
                 }
                 
                 .contact__button {
-                    padding: 20px 35px;
-                    max-width: 100%;
-                    font-size: 12pt;
-                    transition: 0;
                     justify-self: stretch;
-
-                    
-
-                    &:hover {
-                        -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                        -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                        transform: translateY(0);
-                    }
                 }
     
                 .subscribtion {
                     margin-bottom: 20px;
                     justify-content: stretch;
-    
-                    #subscribe {
-                        font-size: 13pt;
-                    }
     
                     #subscribtion {
                         margin-right: 10px;
@@ -413,12 +310,11 @@
                     align-items: center;              
     
                     a {
-                        font-size: 13pt;
                         opacity: 1;
                     }
     
                     .dot {
-                        font-size: 10%;
+                        font-size: 7%;
                         margin: 10px 0;
                     }
                 }

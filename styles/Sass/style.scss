@@ -56,3 +56,9 @@ body {
     background-repeat: no-repeat;
 }
 
+.navbar__wrapper, .hero__wrapper, .easy__wrapper, .services__wrapper, .testimonials__wrapper, .contact__wrapper, .footer__wrapper {
+    max-width: 1440px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+

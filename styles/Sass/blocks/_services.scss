@@ -2,7 +2,6 @@
     padding: 100px 0;
 
     .services__wrapper {
-        width: 90%;
         margin: 0 auto;
 
         .services__title {
@@ -11,13 +10,13 @@
 
             h1 {
                 @include bold();
-                font-size: 42pt;
+                font-size: 42px;
                 color: $blue;
                 margin-bottom: 15px;    
             }
             p {
                 @include reg();
-                font-size: 15pt;
+                font-size: 15px;
                 color: $gray;
             }
         }
@@ -43,7 +42,7 @@
                 p {
                     @include bold();
                     color: $blue;
-                    font-size: 15pt;
+                    font-size: 15px;
                     margin: 0;
                 }
                 .fa-sort-down {
@@ -56,7 +55,7 @@
             .service__content {
                 @include reg();
                 margin-top: 20px;
-                font-size: 15pt;
+                font-size: 15px;
                 display: flex;
                 align-items: center;
 

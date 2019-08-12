@@ -3,7 +3,6 @@
     text-align: center;
 
     .easy__wrapper {
-        width: 90%;
         margin: 0 auto;
 
         .easy__title {
@@ -12,42 +11,65 @@
 
             h1 {
                 @include bold();
-                font-size: 42pt;
+                font-size: 42px;
                 color: $blue;
                 margin-bottom: 15px;    
             }
             h3 {
                 @include bold();
-                font-size: 22pt;
+                font-size: 22px;
                 color: $gray;
                 margin-bottom: 20px;
             }
             p {
                 @include reg();
-                font-size: 15pt;
+                font-size: 15px;
                 color: $gray;
             }
         }
 
         .easy__cards {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             margin-bottom: 80px;
 
             .easy__card {
                 text-align: center;
+                max-width: 350px;
 
                 h3 {
                     @include bold();
-                    font-size: 18pt;
+                    font-size: 18px;
                     color: $blue;
+                    margin: 0  0 10px 0;
                 }
                 p {
                     @include reg();
-                    font-size: 15pt;
+                    font-size: 15px;
                     color: $darkgray;
-                    margin: 10px;
-                } 
+                    margin: 0;
+                    line-height: 1.4;
+                }
+
+                img {
+                    object-fit: none;
+                }
+            }
+
+            .c1 {
+                img {
+                    margin-bottom: 50px;
+                }
+            }
+            .c2 {
+                img {
+                    margin-bottom: 40px;
+                }
+            }
+            .c3 {
+                img {
+                    margin-bottom: 50px;
+                }
             }
         }
 
@@ -57,12 +79,10 @@
             padding: 20px 30px;
             border: 1px solid transparent;
             border-radius: 8px;
-            font-size: 15pt;
+            font-size: 15px;
             transition: 0.15s;
             cursor: pointer;
-            
-            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-            -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
 
             a {
@@ -71,9 +91,7 @@
             }
 
             &:hover {
-                -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                box-shadow: none;
                 transform: translateY(3px);
             }
         }

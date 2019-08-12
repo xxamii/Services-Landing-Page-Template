@@ -40,21 +40,42 @@ $(window).on('load' , function() {
         $('.team__name').html($(this).attr('name'));
     });
 
+
+
+
+
+
     // testimonials reviews-slider
+    let count = 0;
+    const reviews = $('.customers__review');
 
-    $('.fa-chevron-up').on('click' , function() {
-        var current = $('.current');
-        if(current.prev().is('div')) {
-            current.prev().addClass('current');
-            current.removeClass('current'); 
-        }             
-    });
+    function reset() {
+        reviews.each(function() {
+            $(this).removeClass('current')
+        });
+    }
 
-    $('.fa-chevron-down').on('click' , function() {
-        var current = $('.current');
-        if(current.next().is('div')) {
-            current.removeClass('current');
-            current.next().addClass('current'); 
-        }       
-    });
+    $('#arrow_up').on('click' , function() {
+        count--
+
+        if(count <= 0) {
+            count = 0;
+        }
+
+        reset()
+
+        reviews.eq(count).addClass('current');
+    })
+
+    $('#arrow_down').on('click' , function() {
+        count++
+
+        if(count >= reviews.length - 1) {
+            count = reviews.length - 1
+        }
+        
+        reset()
+
+        reviews.eq(count).addClass('current');
+    })
 });

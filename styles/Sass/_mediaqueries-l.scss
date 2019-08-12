@@ -1,14 +1,11 @@
-@media screen and (max-width: 992px) {
-
-    .navbar , .hero , .easy , .satistics , .services , .testimonials , .team , .contact , .footer {
-        padding: 65px 0;
-    }
+@media screen and (max-width: 993px) {
 
     .easy {
         .easy__wrapper {
 
             .easy__cards {
                 justify-content: space-between;
+                align-items: center;
                 flex-wrap: wrap;
                 flex-direction: row;
 

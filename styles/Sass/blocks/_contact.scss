@@ -3,7 +3,6 @@
     padding: 100px 0;
 
     .contact__wrapper {
-        width: 90%;
         margin: 0 auto;
         text-align: center;
 
@@ -12,13 +11,13 @@
 
             h1 {
                 @include bold();
-                font-size: 42pt;
+                font-size: 42px;
                 color: $blue;
                 margin-bottom: 15px;
             }
             p {
                 @include reg();
-                font-size: 15pt;
+                font-size: 15px;
                 color: $gray;
             }
         }
@@ -63,22 +62,20 @@
                 @include bold();
                 background-color: $green;
                 color: white;
-                padding: 25px 45px;
                 border: 1px solid transparent;
                 border-radius: 8px;
-                font-size: 13pt;
+                font-size: 13px;
                 transition: 0.15s;
                 justify-self: end;
+                align-self: center;
+                width: 130px;
+                height: 50px;
                 cursor: pointer;
-                
-                -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
-                -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+
                 box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
 
                 &:hover {
-                    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-                    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+                    box-shadow: none;
                     transform: translateY(3px);
                 }
             }
@@ -89,7 +86,7 @@
 
                 #subscribe {
                     @include reg();
-                    font-size: 13pt;
+                    font-size: 13px;
                     color: $blue;
                 }
 

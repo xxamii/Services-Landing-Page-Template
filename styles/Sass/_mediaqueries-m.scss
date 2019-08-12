@@ -1,4 +1,8 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 577px) {
+
+    body {
+        min-width: 320px;
+    }
 
     .hero {
         padding: 30px 0;
@@ -6,18 +10,11 @@
         .hero__wrapper {
 
             .hero__offer {
-                
-                .hero__h {
-                    font-size: 23pt;
-                }
 
                 .hero__p {
                     margin-bottom: 40px;
                 }
 
-                .hero__button {
-                    font-size: 10pt;
-                }
                 .btn1 {
                     margin-bottom: 10px;
                 }
@@ -42,19 +39,8 @@
 
         .easy__wrapper {
 
-            .easy__title {
-    
-                h1 {
-                    font-size: 23pt;    
-                }
-            }
-
             .easy__cards {
                 margin-bottom: 40px;
-            }
-
-            .easy__button {
-                font-size: 10pt;
             }
         }
     }
@@ -80,13 +66,6 @@
 
         .services__wrapper {
 
-            .services__title {
-    
-                h1 {
-                    font-size: 23pt;   
-                }
-            }
-
             .services__service {
                 padding: 10px 20px;
 
@@ -98,7 +77,6 @@
                     }
 
                     .fa-sort-down {
-                        font-size: 11pt;
                         position: static;
                         margin-right: 0;
                     }
@@ -116,7 +94,6 @@
                 margin-bottom: 40px;
     
                 .title__h {
-                    font-size: 23pt;
                     margin-bottom: 20px;
                 }
                 .title__p {
@@ -135,23 +112,9 @@
 
             .team__title {
                 margin-bottom: 40px;
-    
-                h1 {
-                    font-size: 23pt;
-                }
-                p {
-                    font-size: 15pt;
-                }
             }
 
             .team__content {
-
-                h3 {
-                    font-size: 18pt;
-                }
-                p {
-                    font-size: 15pt;
-                }
 
                 .team__photos {
                     display: flex;
@@ -179,10 +142,6 @@
                     a {
                         margin-right: 15px;
                         transition: 0;
-
-                        &:hover {
-                            color: $gray;
-                        }
                     }
                 }
             }
@@ -196,19 +155,9 @@
 
             .contact__title {
                 margin-bottom: 30px;
-    
-                h1 {
-                    font-size: 23pt;
-                }
             }
 
             .contact__form {
-    
-                .form, textarea {   
-                    margin: 15px auto 15px auto;
-                    font-size: 15pt;
-                    width: 90%;
-                }
                 
                 .contact__button {
                     padding: 15px 25px;

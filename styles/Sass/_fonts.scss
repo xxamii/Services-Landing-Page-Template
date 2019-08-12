@@ -28,6 +28,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Raleway Regular Italic';
+    src: url('../../fonts/Raleway-RegularItalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
 @mixin reg {
     font-family: 'Raleway Regular' , sans-serif;
 }
@@ -38,5 +45,9 @@
 
 @mixin extrabold {
     font-family: 'Raleway Extra Bold' , sans-serif;
+}
+
+@mixin regi {
+    font-family: 'Raleway Regular Italic' , sans-serif;
 }
 
